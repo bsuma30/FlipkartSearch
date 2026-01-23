@@ -1,0 +1,15 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="Flipkart Suite" parallel="tests" thread-count="1">
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Flipkart Search Test">
+        <classes>
+            <class name="FlipkartSearch.SearchDataValidationTest"/>
+            <class name="FlipkartSearch.AddFiltersTest"/>
+            <class name="FlipkartSearch.ClickNewestFirstTest"/>
+            <class name="FlipkartSearch.RetrieveMobilesDataTest"/>
+            <class name="FlipkartSearch.FirstMobilePriceUnder30kTest"/>
+        </classes>
+    </test>
+</suite>
